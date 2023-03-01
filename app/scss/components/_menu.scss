@@ -24,15 +24,6 @@
   &__userlist-item:not(:last-child) {
     margin-right: 2.3rem;
   }
-  /*   &__item-img {
-    margin-right: 1.2rem;
-
-    fill: $darkgrey-text;
-
-    path {
-      fill: $darkgrey-text;
-    }
-  } */
 
   &__list-itemimg {
     text-align: center;
@@ -112,6 +103,7 @@
     cursor: pointer;
     outline: none;
     border: none;
+    z-index: 300;
 
     &::before,
     &::after {
@@ -142,50 +134,49 @@
     }
   }
 
-  /*   &__submenu {
-    position: initial;
-    top: initial;
-    left: initial;
-    width: 100%;
-    transform: initial;
-    opacity: 1;
-    pointer-events: auto;
-    transition: 0.5s;
-    padding: 0;
-    display: none;
-  }
-
-
-  &__list-item:hover > .menu__submenu {
-    display: block;
-    opacity: 1;
-    transform: translate(0, 0);
-    visibility: visible;
-    pointer-events: auto;
-  } */
-
   /*  &__list-wrapper.active {
     width: 80%;
   } */
 }
 
-/* @media (max-width: 1024px) {
-  .menu {
-    &__profile-name {
-      display: none;
-    }
-  }
-} */
-
 @media (max-width: 740px) {
   .menu {
-    /* &--desktop {
-      margin-right: 0;
-      display: none;
-    } */
-
     &__burger {
       display: block;
+    }
+
+    &__list {
+      position: absolute;
+      background: white;
+      right: 0;
+      top: 0;
+      height: 100vh;
+      width: 80%;
+      display: none;
+
+      &.active {
+        top: 6.5rem;
+        display: flex;
+        right: -1.5rem;
+        top: 0;
+        height: 100vh;
+        width: 80%;
+        flex-direction: column;
+        pointer-events: all;
+        justify-content: center;
+        align-items: center;
+        z-index: 200;
+        animation: fade 0.1s linear;
+      }
+    }
+
+    &__list-item {
+      width: 100%;
+      padding: 1.2rem;
+    }
+
+    &__list-item:not(:last-child) {
+      border-bottom: 0.1rem solid #a5a5a5;
     }
 
     /*     &__list-wrapper {
@@ -218,37 +209,5 @@
         padding: 3.6rem;
       }
     } */
-
-    &__list {
-      margin-bottom: 5.4rem;
-    }
-
-    &__list-btn--mobile {
-      display: block;
-    }
-
-    &__list-btns {
-      display: flex;
-      flex: 1;
-    }
-
-    &__list-wrapper.active {
-      width: 80%;
-    }
-    /*  &__profile {
-      margin-left: auto;
-    } */
-  }
-}
-
-@media (max-width: 640px) {
-  .menu {
-    &__list-btns {
-      flex-direction: column;
-      align-self: start;
-    }
-    &__list-btn {
-      margin-bottom: 1.6rem;
-    }
   }
 }

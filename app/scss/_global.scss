@@ -76,6 +76,9 @@ body {
   left: 42.5%;
   width: 2.5rem;
   height: 1.5rem;
+  font-family: $font-prata;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
 }
 
 .swiper-pagination.swiper-pagination--intro {
@@ -83,12 +86,6 @@ body {
 }
 .swiper-pagination.swiper-pagination-hidden {
   opacity: 0;
-}
-
-.swiper-pagination {
-  font-family: $font-prata;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
 }
 
 .swiper-button-prev,
@@ -120,18 +117,7 @@ body {
     opacity: 1;
   }
 }
-@media (max-width: 1400px) {
-  /*   .slick-arrow {
-    top: -5rem;
-  }
-
-  .slick-prev {
-    left: 57.5%;
-  }
-
-  .slick-next {
-    left: 67.5%;
-  } */
+/* @media (max-width: 1400px) {
 
   .swiper-button-prev {
     top: -5rem;
@@ -142,7 +128,7 @@ body {
     top: -5rem;
     left: 24.5%;
   }
-}
+} */
 @media (max-width: 1024px) {
   .title {
     font-size: 3.6rem;
@@ -162,41 +148,29 @@ body {
   }
 
   .swiper-button-prev {
-    top: -5rem;
-    left: 22.5%;
+    bottom: 1rem;
   }
 
   .swiper-button-next {
-    top: -5rem;
-    left: 31.5%;
+    bottom: 1rem;
   }
 
-  .subtitle {
-    font-size: 4.2rem;
-    line-height: 4.2rem;
-    margin-bottom: 2.4rem;
+  .swiper-pagination {
+    bottom: 1rem;
+  }
+
+  .title {
+    font-size: 2.4rem;
+    line-height: 3rem;
   }
 }
 
 @media (max-width: 639px) {
   .swiper-button-prev {
-    top: 50%;
-    transform: translateY(-50%);
-    left: -1.5rem;
+    left: 38%;
   }
 
   .swiper-button-next {
-    top: 50%;
-    transform: translateY(-50%);
-    left: auto;
-    right: -1.5rem;
-  }
-
-  .swiper-pagination {
-    bottom: 5rem;
-    left: 50%;
-  }
-  .swiper-pagination.swiper-pagination--intro {
-    bottom: 8rem;
+    left: 48%;
   }
 }

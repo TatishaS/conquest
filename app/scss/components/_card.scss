@@ -43,3 +43,27 @@
     }
   }
 }
+
+@media (max-width: 1150px) {
+  .card {
+    padding: 2rem;
+
+    &__link {
+      display: inline-block;
+      margin-left: 4rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    &__img {
+      width: 50%;
+    }
+    &__img-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
