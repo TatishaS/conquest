@@ -1,0 +1,45 @@
+.footer {
+  min-height: 5.6rem;
+  background: $darkgrey;
+  color: rgba(255, 255, 255, 0.75);
+
+  &__inner {
+    max-width: 100rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+    font-weight: 700;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-link {
+    margin-right: 2.4rem;
+  }
+
+  &__copyright {
+    margin-right: 4.4rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .footer {
+    &__inner {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    &__info {
+      flex-direction: column;
+    }
+  }
+}

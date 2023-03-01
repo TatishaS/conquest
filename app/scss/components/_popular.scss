@@ -1,0 +1,27 @@
+.popular {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 8.6rem;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 0.6rem;
+  }
+  &__link-wrapper {
+    text-align: right;
+  }
+
+  &__link {
+    display: inline;
+    color: $darkgrey;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    padding-bottom: 1.1rem;
+    border-bottom: 0.1rem solid #c4c0b6;
+    margin-bottom: 2.5rem;
+  }
+}

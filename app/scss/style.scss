@@ -1,0 +1,18 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+/* Стили новой главной */
+@import './components/header';
+@import './components/menu';
+@import './components/btn';
+@import './components/hero';
+@import './components/decor';
+@import './components/popular';
+@import './components/card';
+@import './components/quality';
+@import './components/news';
+@import './components/overlay';
+@import './components/footer';

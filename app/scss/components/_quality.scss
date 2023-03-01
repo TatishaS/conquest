@@ -1,0 +1,49 @@
+.quality {
+  &__wrapper {
+    padding: 0;
+  }
+  &__slider-container {
+    position: relative;
+  }
+
+  & .swiper-slider {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  &__slider-item {
+    background: linear-gradient(#f7f5ef 0%, #f7f5ef 30%) left / 468px 100%
+        no-repeat,
+      url(../images/double-ellipse.svg) right no-repeat, #fdfdfb;
+  }
+
+  &__item-wrapper {
+    padding: 5.2rem 17.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__slider-img {
+    width: 52.1rem;
+    height: 41.4rem;
+    object-fit: cover;
+  }
+  &__item-content {
+    padding: 10rem 12rem 3rem 7rem;
+  }
+  &__item-title {
+    margin-bottom: 3.8rem;
+  }
+  &__item-text {
+    max-width: 38rem;
+    color: $darkgrey;
+    margin-bottom: 4.5rem;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

@@ -1,0 +1,97 @@
+.hero {
+  margin-bottom: 12rem;
+  &__wrapper {
+    background-image: url(../images/hero-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+  }
+  &__inner {
+    min-height: 76.8rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+  }
+
+  &__content {
+    padding: 23.6rem 6.5rem 6.5rem;
+  }
+
+  &__title {
+    font-family: $font-playfair;
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 6rem;
+
+    color: $black-text;
+    margin-bottom: 1.6rem;
+  }
+
+  &__subtitle {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  &__maintitle {
+    max-width: 26rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+
+    color: $black-opacity-text;
+    margin-bottom: 3.5rem;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__img-wrapper {
+    position: relative;
+  }
+
+  &__char-wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    &--price {
+      top: 14rem;
+      left: -5rem;
+    }
+
+    &--size {
+      bottom: 11rem;
+      right: 0rem;
+    }
+  }
+
+  &__char {
+    position: relative;
+    font-family: $font-prata;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    &--price {
+      margin-right: 0.7rem;
+    }
+
+    &--price::after {
+      right: -8rem;
+    }
+
+    &--size::after {
+      left: -6rem;
+    }
+  }
+
+  &__sign-rouble {
+    margin-bottom: 0.2rem;
+  }
+  &__img {
+    object-fit: cover;
+    margin-bottom: -2.6rem;
+  }
+}

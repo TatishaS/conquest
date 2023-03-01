@@ -1,0 +1,48 @@
+.btn {
+  min-width: 20.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2.6rem 3.8rem 2.7rem;
+
+  background: $darkgrey;
+  color: #ffffff;
+
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  opacity: 1;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background: black;
+    opacity: 0.8;
+    color: #ffffff;
+  }
+
+  &--beige {
+    background-color: $accent-beige;
+    color: #ffffff;
+  }
+  &--beige:hover {
+    background: $accent-beige;
+  }
+}
+
+@media (max-width: 860px) {
+  .btn {
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+    &--green,
+    &--pink {
+      font-size: 1.6rem;
+      line-height: 3.6rem;
+    }
+  }
+}
